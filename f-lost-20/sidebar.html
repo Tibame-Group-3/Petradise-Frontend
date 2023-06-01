@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <h5>浪浪收容</h5>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-header"><span> 浪浪認養 </span></li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-vip-diamond-fill"></i>
+                    <i class='fas fa-cat'></i>
+                  </span>
+                  <span class="menu-title"> 種類 </span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title"> 狗 </span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title"> 貓</span>
+                      </a>
+                    </li>
+                    <li class="menu-item sub-menu">
+                      <a href="#">
+                        <span class="menu-title"> 鳥 </span>
+                      </a>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title"> 其他 </span>
+                      </a>
+                    </li>
+              </li>
+            </ul>
+        </div>
+        </li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" viewBox="0 0 576 512">
+                <path
+                  d="M448 238.1V160h16l9.8 19.6c12.5 25.1 42.2 36.4 68.3 26c20.5-8.2 33.9-28 33.9-50.1V80c0-19.1-8.4-36.3-21.7-48H560c8.8 0 16-7.2 16-16s-7.2-16-16-16H480 448C377.3 0 320 57.3 320 128H224 203.2 148.8c-30.7 0-57.6 16.3-72.5 40.8C33.2 174.5 0 211.4 0 256v56c0 13.3 10.7 24 24 24s24-10.7 24-24V256c0-13.4 6.6-25.2 16.7-32.5c1.6 13 6.3 25.4 13.6 36.4l28.2 42.4c8.3 12.4 6.4 28.7-1.2 41.6c-16.5 28-20.6 62.2-10 93.9l17.5 52.4c4.4 13.1 16.6 21.9 30.4 21.9h33.7c21.8 0 37.3-21.4 30.4-42.1l-20.8-62.5c-2.1-6.4-.5-13.4 4.3-18.2l12.7-12.7c13.2-13.2 20.6-31.1 20.6-49.7c0-2.3-.1-4.6-.3-6.9l84 24c4.1 1.2 8.2 2.1 12.3 2.8V480c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V315.7c19.2-19.2 31.5-45.7 32-75.7h0v-1.9zM496 64a16 16 0 1 1 0 32 16 16 0 1 1 0-32z" />
+              </svg>
+            </span>
+            <span class="menu-title">地區</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">北</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">中</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">南</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">東</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" viewBox="0 0 512 512">
+                <path
+                  d="M160.8 96.5c14 17 31 30.9 49.5 42.2c25.9 15.8 53.7 25.9 77.7 31.6V138.8C265.8 108.5 250 71.5 248.6 28c-.4-11.3-7.5-21.5-18.4-24.4c-7.6-2-15.8-.2-21 5.8c-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v30.6l0 0v1.3l0 0 0 32.1c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8 .9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5L245.6 448H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8c0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80zm80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32z" />
+              </svg> </span>
+            <span class="menu-title">#</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">#</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">#</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">#</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-shopping-cart-fill"></i>
+            </span>
+            <span class="menu-title">#</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Products</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Orders</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">credit card</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-global-fill"></i>
+            </span>
+            <span class="menu-title">#</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Google maps</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Open street map</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-paint-brush-fill"></i>
+            </span>
+            <span class="menu-title">#</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Dark</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">Light</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-header" style="padding-top: 20px"><span> 遺失寵物 </span></li>
+        <li class="menu-item sub-menu">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-paint-brush-fill"></i>
+            </span>
+            <span class="menu-title">種類</span>
+          </a>
+          <div class="sub-menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">狗</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">貓</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">鳥</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="menu-title">其他</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-calendar-fill"></i>
+            </span>
+            <span class="menu-title">#</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-icon">
+              <i class="ri-service-fill"></i>
+            </span>
+            <span class="menu-title">#</span>
+          </a>
+        </li>
+        </ul>
+        </nav>
+      </div>
+
+  </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  <div class="layout">
+    <main class="content">
+      <div>
+        <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+          <i class="ri-menu-line ri-xl"></i>
+        </a>
+      </div>
+  </div>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
