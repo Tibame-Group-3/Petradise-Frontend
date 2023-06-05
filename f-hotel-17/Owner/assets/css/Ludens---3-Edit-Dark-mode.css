@@ -28,7 +28,20 @@
 
 .btn-primary {
   background-color: #f1ecd1 !important;
-  border: #f1ecd1 !important;
+  border: #A67C52 !important;
+}
+
+.btn-delete {
+  color: black !important;
+  border: #A67C52 !important;
+  padding-bottom: 2px;
+
+  padding-top: 2px;
+}
+
+.btn-modify {
+  color: black !important;
+  border: #A67C52 !important;
 }
 
 @media only screen and (min-width: 426px) {
@@ -49,13 +62,12 @@
   }
 }
 
-button, button:focus, button:active {
-  outline: none !important;
-  -moz-outline-style: none !important;
-  box-shadow: none !important;
-}
 
-input, input:focus, input:active {
+
+
+input,
+input:focus,
+input:active {
   outline: none !important;
   -moz-outline-style: none !important;
   box-shadow: none !important;
@@ -81,4 +93,3 @@ input, input:focus, input:active {
 .anone:active {
   color: inherit;
 }
-
