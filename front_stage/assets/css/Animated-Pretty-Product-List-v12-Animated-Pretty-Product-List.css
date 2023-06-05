@@ -458,3 +458,36 @@
   transform: none !important;
 }
 
+div.info_area {
+  display: inline-block;
+}
+
+div.info_area div.mem_info {
+  width: 200px;
+}
+
+div.info_area div.mem_info div.col {
+  width: 100%;
+}
+
+div.info_area div.mem_info div.card {
+  border-radius: 15px;
+}
+
+div.info_area div.mem_info div.card div.card-body {
+  padding: 0;
+}
+
+.container#main_block {
+  display: flex;
+}
+
+div.card-body div.table-responsive table.table tbody > tr td {
+  vertical-align: middle;
+}
+
+main.main div.order_detail ul.detail_content {
+  list-style: none;
+  padding-left: 10px;
+}
+
