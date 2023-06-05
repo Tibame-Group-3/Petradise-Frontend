@@ -19,15 +19,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/Articles-Badges-images.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
     <style>
         .action-banner {
-            background-color: #0074a3;
+            background-color: #574f36;
             padding-top: 0;
             padding-bottom: 0;
             color: #fff;
-            font-weight: 700
+            font-weight: 700;
+            margin-top: 30px;
         }
 
         .action-banner:after,
@@ -102,10 +101,10 @@
         .post-button {
             display: flex;
             align-items: center;
-            background-color: #00bfff;
+            background-color: #fd780f;
             color: #fff;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 4px;
             border: none;
             margin-right: 40px;
@@ -404,9 +403,35 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="./images/dog.JPG" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-title"><a href="#">動物名稱</a></div>
+                        <div class="card-text">內容內容....</div>
+                        <div class="image-container">
+                            <img src="./images/comment-alt.png" class="comment_icon" alt="Comment Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="./images/cat.JPG" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-title"><a href="#">動物名稱</a></div>
+                        <div class="card-text">內容內容....</div>
+                        <div class="image-container">
+                            <img src="./images/comment-alt.png" class="comment_icon" alt="Comment Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="text-center">
@@ -443,20 +468,6 @@
             </div>
         </footer>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            const inputElement = document.getElementById('edit-keyword--2');
-            const labelElement = document.querySelector('.label-keyword');
-
-            inputElement.addEventListener('focus', function () {
-                labelElement.classList.add('hidden-preview-text');
-            });
-
-            inputElement.addEventListener('blur', function () {
-                if (!inputElement.value) {
-                    labelElement.classList.remove('hidden-preview-text');
-                }
-            });
-        </script>
 </body>
 
 </html>
