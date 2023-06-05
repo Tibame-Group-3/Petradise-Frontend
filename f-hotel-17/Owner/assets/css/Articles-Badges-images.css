@@ -18,8 +18,13 @@ div.pet {
   height: 200px;
 }
 
-search.btn {
+.btn {
   background-color: #574f36;
+
+}
+
+.btn-delete {
+  color: black;
 }
 
 .btn-search {
@@ -35,10 +40,3 @@ div.search.style {
   padding-left: 61px;
   margin-left: 66px;
 }
-
-img.random {
-}
-
-.carousel-item {
-}
-
