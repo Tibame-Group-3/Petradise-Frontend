@@ -19,63 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <style>
-        #main-content {
-            position: relative;
-            white-space: pre-wrap;
-
-        }
-
-        .bbs-screen {
-            color: black;
-            background-color: white;
-            line-height: 100%;
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            margin: 0 auto;
-            padding: 0;
-            width: 100%;
-        }
-
-        .article-metaline {
-            margin: 0;
-            padding: 0;
-            background-color: #f1ecd1;
-        }
-
-        .article-meta-tag {
-            padding: 0 1ex;
-            color: blakc;
-            font-size: 20px;
-        }
-
-        .article-meta-value {
-            padding: 0 1ex;
-            background-color: #f1ecd1;
-            color: black;
-            font-size: 20;
-        }
-
-        .an {
-            color: black;
-        }
-
-        .f3 {
-            color: black;
-        }
-
-        .push-ipdatetime {
-            float: right;
-        }
-
-        .clip-border {
-            padding: 15%;
-        }
-
-        #main-container {
-            border: 3px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="./FAQ.css">
 </head>
 
 <body>
@@ -168,72 +112,83 @@
             </div>
         </div>
     </nav>
-    <div class="clip-border">
-        <div id="main-container">
-            <div id="main-content" class="bbs-screen bbs-content">
-                <div class="article-metaline"><span class="article-meta-tag">作者</span><span
-                        class="article-meta-value">會員ID</span></div>
-                <div class="article-metaline"><span class="article-meta-tag">標題</span><span
-                        class="article-meta-value">標題</span></div>
-                <div class="article-metaline"><span class="article-meta-tag">時間</span><span
-                        class="article-meta-value">發文時間</span></div>
 
-                <div>
-                    <label for="lost_place">遺失地點：</label>
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon
+                        sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                        viverra suspendisse potenti.</p>
                 </div>
-                <div>
-                    <label for="chip_num">晶片號碼：</label>
-
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky
+                        blue?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                        viverra suspendisse potenti.</p>
                 </div>
-                <div>
-                    <label for="species">品種：</label>
-
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever
+                        discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                        viverra suspendisse potenti.</p>
                 </div>
-                <div>
-                    <label for="color">毛色：</label>
-
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does
+                        the
+                        Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                        viverra suspendisse potenti.</p>
                 </div>
-                <div>
-                    <label for="datetime">遺失時間：</label>
-
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes
+                        stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                        viverra suspendisse potenti.</p>
                 </div>
-                <div>
-                    <label for="feature">寵物特徵：</label>
-                </div>
-
-
-                <div>
-                    <label for="contact_phone">聯絡電話：</label></label>
-
-                </div>
-
-                <div>
-                    <label for="text">文章其他備註：</label><br>
-
-                </div>
-                <div>
-                    <label>商品圖片：</label>
-
-                </div>
-                <div>
-                    補充內容內容內容++++++
-                    +++++++
-                    +++++++
-                </div>
-                <span>--------------------------------------------------------------------------------------------------------------------</span>
-                <div><span class="an">回文帳號</span><span class="f3 push-content">：回文內容 </span><span
-                        class="push-ipdatetime">07/08 21:01</span></div>
-                <div><span class="an">回文帳號</span><span class="f3 push-content">：回文內容 </span><span
-                        class="push-ipdatetime">07/08 21:01</span></div>
-                <div><span class="an">回文帳號</span><span class="f3 push-content">：回文內容 </span><span
-                        class="push-ipdatetime">07/08 21:01</span></div>
-                <div><span class="an">回文帳號</span><span class="f3 push-content">：回文內容 </span><span
-                        class="push-ipdatetime">07/08 21:01</span></div>
-                <div><span class="an">回文帳號</span><span class="f3 push-content">：回文內容 </span><span
-                        class="push-ipdatetime">07/08 21:01</span></div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="text-center">
         <div class="container text-muted py-4 py-lg-5">
             <ul class="list-inline">
@@ -269,6 +224,8 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="./FAQ.js"></script>
 </body>
 
 </html>
