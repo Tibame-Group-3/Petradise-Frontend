@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>MemberHotel</title>
+    <title>會員收藏</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
@@ -119,39 +119,88 @@
             </div>
         </div>
     </nav>
-    <div class="row product-list" style="margin-top: 20px;margin-left: 20px;margin-right: 20px;">
+
+
+
+
+    <!-- 會員收藏 -->
+    <div class="row product-list" id="product-list" style="margin-top: 20px;margin-left: 20px;margin-right: 20px;">
         <div class="col-sm-6 col-md-4 product-item">
             <div class="product-container">
-                <h4>旅館名稱</h4>
+                <h4 id="hotel-name">旅館名稱</h4>
                 <div class="row">
                     <div class="col-md-12"><a class="product-image" href="#"><img src="assets/img/iphone6.jpg"></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-8">
-                        <h2><a href="#">房型名稱</a></h2>
+                        <h2><a id="room-name" href="#">房型名稱</a></h2>
                     </div>
                     <div class="col-4">
-                        <div class="d-lg-flex align-items-lg-center product-rating"><i class="fa fa-star"></i><a
-                                class="small-text" href="#" style="font-size: 19px;">4.0</a></div>
+                        <div class="d-lg-flex align-items-lg-center product-rating"><i class="fa fa-star"></i>
+                            <a id="score1" class="small-text" href="#" style="font-size: 19px;">4.0</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                        <p class="product-description" id="room-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nam
                             ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.
                         </p>
                         <div class="row">
                             <div class="col">
                                 <div class="row" style="margin-top: -33px;">
-                                    <div class="col d-lg-flex align-items-lg-end"><button class="btn btn-light"
-                                            type="button"
-                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button><button
-                                            class="btn btn-light" type="button"
+                                    <div class="col d-lg-flex align-items-lg-end">
+                                        <button class="btn btn-light btn-unfavorite" type="button"
+                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button>
+                                        <button class="btn btn-light" id="btn-view-room" type="button"
                                             style="padding-left: 5px;padding-right: 5px;margin-left: 0px;margin-right: 4px;">瀏覽房型</button>
-                                        <p class="product-price"
+                                        <p class="product-price" id="product-price"
                                             style="padding-left: 10px;margin-left: 35px;margin-top: 5px;margin-bottom: 23px;">
-                                            $599.00 </p>
+                                            $1.00 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 product-item">
+            <div class="product-container">
+                <h4 id="hotel-name">旅館名稱</h4>
+                <div class="row">
+                    <div class="col-md-12"><a class="product-image" href="#"><img src="assets/img/iphone6.jpg"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <h2><a id="room-name" href="#">房型名稱</a></h2>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-lg-flex align-items-lg-center product-rating"><i class="fa fa-star"></i>
+                            <a id="score1" class="small-text" href="#" style="font-size: 19px;">4.0</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="product-description" id="room-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nam
+                            ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row" style="margin-top: -33px;">
+                                    <div class="col d-lg-flex align-items-lg-end">
+                                        <button class="btn btn-light btn-unfavorite" type="button"
+                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button>
+                                        <button class="btn btn-light" id="btn-view-room" type="button"
+                                            style="padding-left: 5px;padding-right: 5px;margin-left: 0px;margin-right: 4px;">瀏覽房型</button>
+                                        <p class="product-price" id="product-price"
+                                            style="padding-left: 10px;margin-left: 35px;margin-top: 5px;margin-bottom: 23px;">
+                                            $2.00 </p>
                                     </div>
                                 </div>
                             </div>
@@ -184,14 +233,14 @@
                         <div class="row">
                             <div class="col">
                                 <div class="row" style="margin-top: -33px;">
-                                    <div class="col d-lg-flex align-items-lg-end"><button class="btn btn-light"
-                                            type="button"
-                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button><button
-                                            class="btn btn-light" type="button"
+                                    <div class="col d-lg-flex align-items-lg-end">
+                                        <button class="btn btn-light btn-unfavorite" type="button"
+                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button>
+                                        <button class="btn btn-light" type="button"
                                             style="padding-left: 5px;padding-right: 5px;margin-left: 0px;margin-right: 4px;">瀏覽房型</button>
                                         <p class="product-price"
                                             style="padding-left: 10px;margin-left: 35px;margin-top: 5px;margin-bottom: 23px;">
-                                            $599.00 </p>
+                                            $3.00 </p>
                                     </div>
                                 </div>
                             </div>
@@ -212,8 +261,10 @@
                         <h2><a href="#">房型名稱</a></h2>
                     </div>
                     <div class="col-4">
-                        <div class="d-lg-flex align-items-lg-center product-rating"><i class="fa fa-star"></i><a
-                                class="small-text" href="#" style="font-size: 19px;">4.0</a></div>
+                        <div class="d-lg-flex align-items-lg-center product-rating">
+                            <i class="fa fa-star"></i>
+                            <a class="small-text" href="#" style="font-size: 19px;">4.0</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -224,14 +275,14 @@
                         <div class="row">
                             <div class="col">
                                 <div class="row" style="margin-top: -33px;">
-                                    <div class="col d-lg-flex align-items-lg-end"><button class="btn btn-light"
-                                            type="button"
-                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button><button
-                                            class="btn btn-light" type="button"
+                                    <div class="col d-lg-flex align-items-lg-end">
+                                        <button class=" btn btn-light btn-unfavorite" type="button"
+                                            style="margin-top: 60px;padding-left: 5px;padding-right: 5px;margin-right: 5px;">取消收藏</button>
+                                        <button class="btn btn-light" type="button"
                                             style="padding-left: 5px;padding-right: 5px;margin-left: 0px;margin-right: 4px;">瀏覽房型</button>
                                         <p class="product-price"
                                             style="padding-left: 10px;margin-left: 35px;margin-top: 5px;margin-bottom: 23px;">
-                                            $599.00 </p>
+                                            $4.00 </p>
                                     </div>
                                 </div>
                             </div>
@@ -289,6 +340,74 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('btn-favorite').addEventListener('click', function () {
+            // 假設您已經得到了旅館的信息，以下是一個簡單的例子
+            let hotel = {
+                name: '旅館名稱',
+                roomName: '房型名稱',
+                description: '房型描述',
+                price: '$599.00'
+                // 更多信息...
+            };
+
+            // 將這個旅館添加到收藏列表
+            addHotelToFavorites(hotel);
+        });
+
+        function addHotelToFavorites(hotel) {
+            // 創建新的旅館div元素
+            let hotelDiv = document.createElement('div');
+            hotelDiv.className = 'col-sm-6 col-md-4 product-item';
+
+            // 將旅館信息添加到這個元素中
+            hotelDiv.innerHTML = `
+    <!-- 與上面的HTML相同，但是使用旅館的信息 -->
+  `;
+
+            // 添加到收藏列表
+            document.getElementById('favorites-list').appendChild(hotelDiv);
+        }
+
+    </script>
+
+    <!-- 取消收藏 -->
+    <script>
+        // 獲取所有的取消收藏按鈕
+        var buttons = document.querySelectorAll(".btn-unfavorite");
+
+        // 為每個按鈕添加點擊事件
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                // 獲取被點擊的按鈕的最近的.product-item祖先元素
+                var productItem = this.closest('.product-item');
+
+                // 檢查元素是否存在
+                if (productItem !== null) {
+                    // 如果元素存在，從文檔中移除它
+                    productItem.parentNode.removeChild(productItem);
+                }
+
+                // 檢查#product-list是否還有.product-item
+                var productList = document.getElementById('product-list');
+                var productItems = productList.querySelectorAll('.product-item');
+                if (productItems.length === 0) {
+                    // 如果沒有，隱藏nav
+                    var nav = document.querySelector('.mt-4');
+                    nav.style.display = 'none';
+                }
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
 </body>
 
 </html>
