@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blank Page - Brand</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="./fonts/fontawesome-all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .container h1 {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .container form {
+            padding: 20px;
+            background: #EBF0F4;
+            border-radius: 10px;
+
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            height: 60px;
+        }
+
+
+        .help-block.error {
+            margin-bottom: 5px;
+        }
+
+        .messages {
+            margin: 10px 5px;
+            color: #dc3545
+        }
+
+        label {
+            width: auto;
+            white-space: nowrap;
+        }
+
+        div.text {
+            /* border: 1px solid black; */
+            display: inline-block;
+            width: 80px;
+            margin-left: 50px;
+
+
+        }
+
+        .form-control {
+            /* border: 1px solid red; */
+            display: inline-block;
+            min-width: 300px !important;
+            max-width: 300px !important;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"
+            style="background: #f1ecd1;">
+            <div class="container-fluid d-flex flex-column p-0"><a
+                    class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-text mx-3"><img width="59" height="33" src="./img/avatars/logo-only.png">
+                    </div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true"
+                            data-bs-toggle="dropdown" data-bs-auto-close="false" href="#"
+                            style="color: #a67c52;padding: 5px 16px;font-weight: bold;font-size: 14px;">帳號管理</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"
+                            style="background: rgba(255,255,255,0);border-style: none;padding: 0px;margin: 0px;margin-bottom: 5px;">
+                            <a class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">認證資料</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">基本資料</a>
+                            <div class="dropdown-divider" style="border-color: rgb(255,255,255);"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true"
+                            data-bs-toggle="dropdown" data-bs-auto-close="false" href="#"
+                            style="color: #a67c52;padding: 5px 16px;font-weight: bold;font-size: 14px;">房間管理</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"
+                            style="background: rgba(255,255,255,0);border-style: none;padding: 0px;margin: 0px;margin-bottom: 5px;">
+                            <a class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">總覽</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">已上架</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">未上架</a>
+                            <div class="dropdown-divider" style="border-color: rgb(255,255,255);"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true"
+                            data-bs-toggle="dropdown" data-bs-auto-close="false" href="#"
+                            style="color: #a67c52;padding: 5px 16px;font-weight: bold;font-size: 14px;">訂單管理</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"
+                            style="background: rgba(255,255,255,0);border-style: none;padding: 0px;margin: 0px;margin-bottom: 5px;">
+                            <a class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">新增商品</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">商品列表</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">新增促銷專案</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">促銷專案列表</a><a
+                                class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">訂單列表</a>
+                            <div class="dropdown-divider" style="border-color: rgb(255,255,255);"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true"
+                            data-bs-toggle="dropdown" data-bs-auto-close="false" href="#"
+                            style="color: #a67c52;padding: 5px 16px;font-weight: bold;font-size: 14px;">即時聊天管理</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"
+                            style="background: rgba(255,255,255,0);border-style: none;padding: 0px;margin: 0px;margin-bottom: 5px;">
+                            <a class="dropdown-item" href="#" style="padding: 2px 30px;font-size: 13px;">客服列表</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
+                        id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3"
+                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                                        aria-expanded="false" data-bs-toggle="dropdown" href="#"><span
+                                            class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img
+                                            class="border rounded-circle img-profile"
+                                            src="./img/avatars/avatar1.jpeg"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"
+                                        style="min-width: 110px;"><a class="dropdown-item" href="#"><i
+                                                class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-1">認證資料</h3>
+                </div>
+                <div class="container">
+                    <h3>旅館帳號管理</h3>
+                    <div form-container>
+                        <form id="main" form action="#" method="#" class="contact_form">
+                            <!-- <div class="form-row"> -->
+                            <div class="form-group ">
+
+                                <label for="owner_name">
+                                    <div class="text">姓名:</div>
+                                </label>
+
+                                <input id="owner_name" class="form-control" type="owner_name" placeholder="業主姓名"
+                                    name="owner_name">
+                                <div class="messages"></div>
+                            </div>
+                            <div class="form-group ">
+
+                                <label for="owner_id">
+                                    <div class="text">身分證:</div>
+                                </label>
+
+                                <input id="owner_id" class="form-control" type="owner_id" placeholder="身分證字號"
+                                    name="owner_id" disabled>
+                                <div class="messages"></div>
+                            </div>
+
+                            <div class="form-group ">
+
+                                <label for="email">
+                                    <div class="text">Email:</div>
+                                </label>
+
+                                <input id="email" class="form-control" type="email" placeholder="Email" name="email">
+                                <div id="errorContainer"></div>
+
+                                <!-- <div class="messages"></div> -->
+                            </div>
+                            <div class="form-group ">
+
+                                <label for="password">
+                                    <div class="text">密碼:</div>
+                                </label>
+
+                                <input id="password" class="form-control" type="password" placeholder="Password"
+                                    name="密碼" disabled>
+                                <button>修改密碼</button>
+
+                            </div>
+                            <!-- </div> -->
+                            <div class="form-group">
+
+                                <label for="confirm-password">
+                                    <div class="text">新密碼:</div>
+                                </label>
+
+                                <input id="confirm-password" class="form-control" type="password"
+                                    placeholder="Confirm password" name="新密碼">
+                                <div class="messages"></div>
+                            </div>
+                            <div class="form-group">
+
+                                <label for="confirm-password">
+                                    <div class="text">確認新密碼:</div>
+                                </label>
+
+                                <input id="confirm-password" class="form-control" type="password"
+                                    placeholder="Confirm password" name="確認密碼">
+                                <div class="messages"></div>
+                            </div>
+
+                            <!-- <div class="form-row"> -->
+
+                            <div class="form-group ">
+
+                                <label for="phone">
+                                    <div class="text">電話:</div>
+                                </label>
+
+                                <input id="phone" class="form-control" type="text" placeholder="0912-345-678" name="電話">
+                                <div class="messages"></div>
+                            </div>
+                            <!-- </div> -->
+                            <div class="form-group ">
+
+                                <label for="owner_bank">
+                                    <div class="text">銀行帳號:</div>
+                                </label>
+
+                                <input id="owner_bank" class="form-control" type="text" placeholder="填入常用收款帳號"
+                                    name="owner_bank">
+                                <div class="messages"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hotel_name">
+                                    <div class="text">旅館名稱:</div>
+                                </label>
+                                <input type="text" class="form-control" name="hotel_name" id="hotel_name" maxlength="20"
+                                    placeholder="請輸入旅館登記名稱"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="owner_account">
+                                    <div class="text">統一編號:</div>
+                                </label>
+                                <input type="text" class="form-control" name="owner_account" id="owner_account"
+                                    maxlength="8" placeholder="帳號" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="hotel_address">
+                                    <div class="text">旅館地址:</div>
+                                </label>
+                                <input type="text" class="form-control" name="hotel_address" id="hotel_address"
+                                    maxlength="100" placeholder="請輸入登記之地址">
+                            </div>
+                            <div class="form-group">
+                                <label for="hotel_lic_id">
+                                    <div class="text">許可證號:</div>
+                                </label>
+                                <input type="text" class="form-control" name="hotel_lic_id" id="hotel_lic_id"
+                                    maxlength="50" placeholder="請填入許可證之證號" disabled>
+                            </div>
+                            <label for="hotel_lic">
+                                <div>旅館特種寵物業許可證明文件(附檔名應為"jpg"、"jpeg"、"png"):</div>
+                        </form>
+                        <button>編輯</button>
+                        <button>保存</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+</body>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/theme.js"></script>
+<script src="https://validatejs.org/validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script>
+
+
+    var constraints = {
+        email: {
+            presence: true,
+            email: true
+        }
+    };
+
+    var emailInput = document.getElementById("email");
+    var errorContainer = document.getElementById("errorContainer");
+
+    emailInput.addEventListener("blur", function () {
+        errorContainer.innerHTML = "";
+
+        var emailValue = emailInput.value;
+
+        var validationResult = validate({ email: emailValue }, constraints);
+
+        if (validationResult) {
+            for (var field in validationResult) {
+                if (validationResult.hasOwnProperty(field)) {
+                    validationResult[field].forEach(function (error) {
+                        var errorMessage = document.createElement("div");
+                        errorMessage.classList.add("error-message");
+                        errorMessage.innerText = error;
+                        errorContainer.appendChild(errorMessage);
+                    });
+                }
+            }
+        }
+    });
+
+
+
+    // (function () {
+    //     validate.extend(validate.validators.datetime, {
+    //         parse: function (value, options) {
+    //             return +moment.utc(value);
+    //         },
+    //         format: function (value, options) {
+    //             var format = options.dateOnly ? "YYYY-MM-DD" : "YYYY-MM-DD hh:mm:ss";
+    //             return moment.utc(value).format(format);
+    //         }
+    //     });
+    //     var constraints = {
+    //         "email": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             }, // Email 是必填欄位
+    //             email: true // 需要符合 email 格式
+    //         },
+    //         //==============================待調整===================================
+    //         "密碼": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             }, // 密碼是必填欄位
+    //             length: {
+    //                 minimum: 5, // 長度大於 ５
+    //                 maximum: 12, // 長度小於 12
+    //                 message: "^密碼長度需大於 5 小於 12"
+    //             },
+    //         },
+    //         "確認密碼": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             },// 確認密碼是必填欄位
+    //             equality: {
+    //                 attribute: "新密碼",// 此欄位要和密碼欄位一樣
+    //                 message: "^密碼不相同"
+    //             }
+    //         },
+    //         "使用者名稱": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             }, // 必填使用者名稱
+    //             length: {
+    //                 minimum: 3, // 名稱長度要超過 3
+    //             },
+    //             format: {
+    //                 pattern: "[a-z0-9]+", // 只能填入英文或數字
+    //                 flags: "i",// 大小寫不拘
+    //                 message: "只能包含 a-z 和 0-9"
+    //             }
+    //         },
+    //         '生日': {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             }, // 生日欄位是必填
+    //             date: {
+    //                 latest: moment().subtract(18, "years"), // 年齡滿 18
+    //                 message: "^超過 18 歲才可以使用這個服務哦～"
+    //             }
+    //         },
+    //         "所在地": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             }, // 所在地為必填
+    //             inclusion: {
+    //                 within: ["KS"],  // 只有在 within 的才驗證通過
+    //                 message: "^Sorry, 這個服務只提供給高雄"
+    //             }
+    //         },
+    //         "電話": {
+    //             presence: {
+    //                 message: "是必填的欄位"
+    //             },
+    //         },
+    //     };
+
+    //     // Hook up the form so we can prevent it from being posted
+    //     var form = document.querySelector("form#main");
+    //     form.addEventListener("submit", function (ev) {
+    //         ev.preventDefault();
+    //         handleFormSubmit(form);
+    //     });
+
+    //     // 監聽 input 值改變的狀況
+    //     var inputs = document.querySelectorAll("input, textarea, select")
+    //     for (var i = 0; i < inputs.length; ++i) {
+    //         inputs.item(i).addEventListener("change", function (ev) {
+    //             var errors = validate(form, constraints) || {};
+    //             showErrorsForInput(this, errors[this.name])
+    //         });
+    //     }
+
+    //     // 沒有錯誤就顯示成功傳送
+    //     function handleFormSubmit(form, input) {
+    //         var errors = validate(form, constraints);// validate the form aainst the constraints
+    //         showErrors(form, errors || {}); // then we update the form to reflect the results
+    //         if (!errors) {
+    //             showSuccess();
+    //         }
+    //     }
+
+    //     // Updates the inputs with the validation errors
+    //     function showErrors(form, errors) {
+    //         // We loop through all the inputs and show the errors for that input
+    //         _.each(form.querySelectorAll("input[name], select[name]"), function (input) {
+    //             // Since the errors can be null if no errors were found we need to handle
+    //             // that
+    //             showErrorsForInput(input, errors && errors[input.name]);
+    //         });
+    //     }
+
+    //     // Shows the errors for a specific input
+    //     function showErrorsForInput(input, errors) {
+    //         // This is the root of the input
+    //         var formGroup = closestParent(input.parentNode, "form-group")
+    //             // Find where the error messages will be insert into
+    //             , messages = formGroup.querySelector(".messages");
+    //         // First we remove any old messages and resets the classes
+    //         resetFormGroup(formGroup);
+    //         // If we have errors
+    //         if (errors) {
+    //             // we first mark the group has having errors
+    //             formGroup.classList.add("has-error");
+    //             // then we append all the errors
+    //             _.each(errors, function (error) {
+    //                 addError(messages, error);
+    //             });
+    //         } else {
+    //             // otherwise we simply mark it as success
+    //             formGroup.classList.add("has-success");
+    //         }
+    //     }
+
+    //     // Recusively finds the closest parent that has the specified class
+    //     function closestParent(child, className) {
+    //         if (!child || child == document) {
+    //             return null;
+    //         }
+    //         if (child.classList.contains(className)) {
+    //             return child;
+    //         } else {
+    //             return closestParent(child.parentNode, className);
+    //         }
+    //     }
+
+    //     function resetFormGroup(formGroup) {
+    //         // Remove the success and error classes
+    //         formGroup.classList.remove("has-error");
+    //         formGroup.classList.remove("has-success");
+    //         // and remove any old messages
+    //         _.each(formGroup.querySelectorAll(".help-block.error"), function (el) {
+    //             el.parentNode.removeChild(el);
+    //         });
+    //     }
+
+    //     // Adds the specified error with the following markup
+    //     // <p class="help-block error">[message]</p>
+    //     function addError(messages, error) {
+    //         var block = document.createElement("p");
+    //         block.classList.add("help-block");
+    //         block.classList.add("error");
+    //         block.innerText = error;
+    //         console.log(block);
+    //         messages.appendChild(block);
+    //     }
+    //     function showSuccess() {
+    //         alert("Success!"); // We made it \:D/
+    //     }
+    // })();
+</script>
+
+</html>
