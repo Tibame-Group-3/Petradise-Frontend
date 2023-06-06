@@ -17,40 +17,70 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anybody&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+
     <style>
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+        * {
+            box-sizing: border-box;
         }
 
-        h1 {
-            text-align: center;
+
+        .container_re {
+
+            font-family: 'Muli', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
         }
 
-        textarea {
-            width: 100%;
-            height: 40px;
+
+        .course {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            max-width: 100%;
+            margin: 20px;
+            overflow: hidden;
+            width: 700px;
         }
 
-        a {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
+
+        .course h3 {
+            letter-spacing: 1px;
+            margin: 10px 0;
         }
 
-        .post-item {
-            margin-bottom: 20px;
+        .course-preview {
+            background-color: #574f36;
+            color: #fff;
+            padding: 30px;
+            max-width: 250px;
+        }
+
+
+        .course-info {
+            padding: 30px;
             position: relative;
+            width: 100%;
         }
 
-        .read-more {
+        .btn_re {
+            background-color: #574f36;
+            border: 0;
+            border-radius: 50px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 25px;
             position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 10px;
+            bottom: 30px;
+            right: 30px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -145,47 +175,47 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1>遺失寵物貼文管理</h1>
-        <div class="post-list">
-            <div class="post-item">
-                <h2>文章一</h2>
-                <textarea readonly>這是文章一的內容。</textarea>
-                <a href="https://example.com/post1" class="read-more">閱讀更多</a>
-            </div>
-            <div class="post-item">
-                <h2>文章二</h2>
-                <textarea readonly>這是文章二的內容。</textarea>
-                <a href="https://example.com/post1" class="read-more">閱讀更多</a>
-            </div>
-            <div class="post-item">
-                <h2>文章三</h2>
-                <textarea readonly>這是文章三的內容。</textarea>
-                <a href="https://example.com/post1" class="read-more">閱讀更多</a>
+
+    <div class="container_re">
+        <h2>遺失寵物貼文管理</h2>
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+
+                    <h3>標題標題</h3>
+                </div>
+                <div class="course-info">
+                    <h4>111111111212121212112222233323232232</h4>
+                    <button class="btn_re">更多內容</button>
+                </div>
             </div>
         </div>
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+
+                    <h3>標題標題</h3>
+                </div>
+                <div class="course-info">
+                    <h4>111111111212121212112222233323232232</h4>
+                    <button class="btn_re">更多內容</button>
+                </div>
+            </div>
+        </div>
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+
+                    <h3>標題標題</h3>
+                </div>
+                <div class="course-info">
+                    <h4>111111111212121212112222233323232232</h4>
+                    <button class="btn_re">更多內容</button>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -225,6 +255,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
